@@ -8,16 +8,16 @@ def read(fname):
 
 
 setup(
-    name='Flask-Bootstrap',
-    version='3.3.7.2.dev1',
-    url='http://github.com/mbr/flask-bootstrap',
+    name='Flask-Bootstrap4',
+    version='4.3.1.0.dev0',
+    url='http://github.com/goodtiding5/flask-bootstrap4',
     license='BSD',
-    author='Marc Brinkmann',
-    author_email='git@marcbrinkmann.de',
+    author='Kenneth Zhao',
+    author_email='kenneth.zhao@goodtiding5.com',
     description='An extension that includes Bootstrap in your '
     'project, without any boilerplate code.',
     long_description=read('README.rst'),
-    packages=['flask_bootstrap'],
+    packages=['flask_bootstrap4'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',
