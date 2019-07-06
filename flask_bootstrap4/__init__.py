@@ -19,7 +19,7 @@ else:
 
 from .forms import render_form
 
-__version__ = '4.3.1.0.dev0'
+__version__ = '4.3.1.0.dev1'
 BOOTSTRAP_VERSION = re.sub(r'^(\d+\.\d+\.\d+).*', r'\1', __version__)
 JQUERY_VERSION = '3.3.1'
 POPPER_VERSION = '1.14.7'
