@@ -13,8 +13,8 @@ setup(
     url='http://github.com/goodtiding5/flask-bootstrap4',
     license='BSD',
     author='Kenneth Zhao',
-    author_email='kenneth.zhao@goodtiding5.com',
-    description='An extension that includes Bootstrap in your '
+    author_email='kenneth.zhao@gmail.com',
+    description='An extension that includes Bootstrap 4 in your '
     'project, without any boilerplate code.',
     long_description=read('README.rst'),
     packages=['flask_bootstrap4'],
