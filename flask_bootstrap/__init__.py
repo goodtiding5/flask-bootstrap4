@@ -19,12 +19,10 @@ else:
 
 from .forms import render_form
 
-__version__ = '3.3.7.1.dev1'
+__version__ = '4.3.1'
 BOOTSTRAP_VERSION = re.sub(r'^(\d+\.\d+\.\d+).*', r'\1', __version__)
-JQUERY_VERSION = '1.12.4'
-HTML5SHIV_VERSION = '3.7.3'
-RESPONDJS_VERSION = '1.4.2'
-
+JQUERY_VERSION = '3.3.1'
+POPPER_VERSION = '1.14.7'
 
 class CDN(object):
     """Base class for CDN objects."""
@@ -170,13 +168,9 @@ class Bootstrap(object):
             WebCDN('//cdnjs.cloudflare.com/ajax/libs/jquery/%s/' %
                    JQUERY_VERSION), local)
 
-        html5shiv = lwrap(
-            WebCDN('//cdnjs.cloudflare.com/ajax/libs/html5shiv/%s/' %
-                   HTML5SHIV_VERSION))
-
-        respondjs = lwrap(
-            WebCDN('//cdnjs.cloudflare.com/ajax/libs/respond.js/%s/' %
-                   RESPONDJS_VERSION))
+        popper = lwrap(
+            WebCDN('//cdnjs.cloudflare.com/ajax/libs/popper.js/%s/' %
+                   HTML5SHIV_VERSION), local)
 
         app.extensions['bootstrap'] = {
             'cdns': {
@@ -184,8 +178,7 @@ class Bootstrap(object):
                 'static': static,
                 'bootstrap': bootstrap,
                 'jquery': jquery,
-                'html5shiv': html5shiv,
-                'respond.js': respondjs,
+                'popper': popper,
             },
         }
 

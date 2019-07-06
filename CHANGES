@@ -4,6 +4,10 @@ Flask-Bootstrap Changelog
 The following changes are not backwards compatible or major new features
 (bugfixes or new upstream releases are not explicitly listed):
 
+4.3.1
+-------
+* Move to support Bootstrap 4 release.
+
 3.3.7.0
 -------
 * Most likely to be the last major Bootstrap 3 release (see
