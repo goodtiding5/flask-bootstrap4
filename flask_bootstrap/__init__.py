@@ -170,7 +170,7 @@ class Bootstrap(object):
 
         popper = lwrap(
             WebCDN('//cdnjs.cloudflare.com/ajax/libs/popper.js/%s/' %
-                   HTML5SHIV_VERSION), local)
+                   POPPER_VERSION), local)
 
         app.extensions['bootstrap'] = {
             'cdns': {
